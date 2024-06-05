@@ -1,0 +1,224 @@
+nav {
+    background-color: black;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    border: 10px double white;
+    padding: 4px;
+}
+
+.logo {
+    padding: 0;
+    display: block;
+}
+
+.menu {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 20px;
+}
+
+.menu a {
+    float: left;
+    color: rgb(216, 216, 216);
+    text-align: left;
+    padding: 10px 20px;
+    font-weight: bold;
+    text-decoration: none;
+    border: 3px solid black;
+}
+
+@keyframes bounce {
+	0%, 20%, 60%, 100% {
+		transform: translateY(0);
+		transform: translateY(0);
+	}
+
+	40% {
+		transform: translateY(-10px);
+		transform: translateY(-10px);
+	}
+
+	80% {
+		transform: translateY(-5px);
+		transform: translateY(-5px);
+	}
+}
+
+.menu a:hover {
+    background-color: #151515;
+    color: white;
+    animation: bounce 1s;
+    border: 3px dotted white;
+}
+
+@media (max-width: 768px) {
+    .menu {
+      flex-direction: column;
+    }
+  
+    .menu li {
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+  
+    .menu li:last-child {
+      margin-bottom: 0;
+    }
+
+    .logo {
+        display: none;
+    }
+  }
+
+.swiper {
+    width: 100%;
+    height: 30%;
+}
+
+.strelki {
+    --swiper-navigation-size: 20px !important;
+    opacity: 0.5;
+    color: white !important;
+}
+
+.image-container {
+    position: relative;
+    width: auto;
+    height: auto;
+    outline: 5px solid white;
+    outline-offset: -5px;
+}
+  
+.image-container img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+  
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-image: url('images/background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.text {
+    font-size: 20;
+    color: white;
+    text-align: center;
+}
+
+.loading-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+  transition: opacity 1s ease-in-out;
+}
+
+.loading-spinner {
+  width: 70px;
+  height: 70px;
+  position: relative;
+}
+
+.loading-spinner > div {
+  width: 18px;
+  height: 18px;
+  background-color: #fff;
+  border-radius: 100%;
+  display: inline-block;
+  -webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+  animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+}
+
+.loading-spinner .bounce1 {
+  -webkit-animation-delay: -0.32s;
+  animation-delay: -0.32s;
+}
+
+.loading-spinner .bounce2 {
+  -webkit-animation-delay: -0.16s;
+  animation-delay: -0.16s;
+}
+
+@-webkit-keyframes sk-bouncedelay {
+  0%, 80%, 100% { -webkit-transform: scale(0) }
+  40% { -webkit-transform: scale(1.0) }
+}
+
+@keyframes sk-bouncedelay {
+  0%, 80%, 100% { 
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  } 40% { 
+    -webkit-transform: scale(1.0);
+    transform: scale(1.0);
+  }
+}
+
+.container {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 0x;
+  min-height: calc(100vh); /* высота страницы минус высота меню */
+}
+
+.banner {
+  position: sticky;
+  top: 0; /* высота меню плюс отступ */
+  width: 20vw;
+  padding: 0;
+  text-align: center;
+}
+
+.banner img {
+  max-width: 100%;
+  height: auto;
+  width: 100%;
+  border: 2px solid white;
+}
+
+@media (max-width: 768px) {
+  .banner {
+    display: none; /* Скрываем баннер на мобильных устройствах */
+  }
+}
+
+.content {
+  flex-grow: 1;
+  color: white;
+  overflow-wrap: break-word;
+  text-align: center;
+  width: 40vw;
+  margin-right: 10vw;
+  margin-left: 10vw;
+  font-size: 20px;
+}
+
+.tradingview-widget-container {
+  width: 100%;
+  height: 500px;
+}

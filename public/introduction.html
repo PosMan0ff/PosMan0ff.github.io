@@ -1,0 +1,116 @@
+<head>
+    <title>Введение</title>
+
+    <link rel="icon" type="image/png" href="images/logo.png">
+
+    <link rel="stylesheet" href="styles.css">
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <script type="module">
+        import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs'
+
+        const swiper = new Swiper('.swiper', {
+        loop: true,
+
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        });;
+    </script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+</head>
+
+<body>
+
+    <div id="loading-overlay" class="loading-overlay">
+        <div class="loading-spinner">
+          <div class="bounce1"></div>
+          <div class="bounce2"></div>
+          <div class="bounce3"></div>
+        </div>
+    </div>
+>
+    <div class="swiper">
+
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="image-container">
+                    <img src="images/slide1.jpg" alt="Your Photo">
+                    <div class="overlay"></div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="image-container">
+                    <img src="images/slide2.jpg" alt="Your Photo">
+                    <div class="overlay"></div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="image-container">
+                    <img src="images/slide3.jpg" alt="Your Photo">
+                    <div class="overlay"></div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="swiper-button-prev strelki"></div>
+        <div class="swiper-button-next strelki"></div>
+    </div>
+
+    <nav>
+        <a href="index.html" class="logo"><img src="images/logo.png" alt="Главная" width="50" height="50"></a>
+        <div class="menu">
+            <a href="index.html">Главная</a>
+            <a href="introduction.html">Введение</a>
+            <a href="arbitration.html">Арбитраж</a>
+            <a href="course.html">Курс</a>
+            <a href="contacts.html">Контакты</a>
+            <div id="account-menu-item"><a href="account.html" >Аккаунт</a></div>
+        </div>
+    </nav>
+
+    <div class ="container" style="flex-direction: row-reverse;">
+        <div class="banner">
+            <img src="images/banner_introduction.gif" alt="Боковой баннер">
+        </div>
+
+        <div class="content">
+            <h1 style="text-align: center;">Введение в мир криптовалюты: Риски, Торговля и Ошибки</h1>
+            
+            <p>В последние годы криптовалюты стали объектом всеобщего интереса. Начинающие инвесторы и трейдеры привлечены возможностью заработать на волатильности цифровых активов. Однако, прежде чем погрузиться в этот захватывающий мир, важно понимать какие риски несет торговля криптовалютами и как избежать распространенных ошибок.</p>
+
+            <h3 style="text-align: center;">Что такое криптовалюта?</h1>
+
+            <p>Криптовалюта — это цифровой актив, использующий криптографию для обеспечения безопасности транзакций и контроля создания новых единиц. Одной из самых популярных криптовалют является Биткойн, но существует множество других альтернативных монет, таких как Эфириум, Лайткойн и Риппл.</p>
+
+            <h3 style="text-align: center;">Риски торговли криптовалютами:</h1>
+
+            <p>1. Высокая волатильность: Цены криптовалют могут сильно колебаться за короткий период времени, что создает высокий уровень риска как для прибыли, так и для потерь.</p>
+
+            <p>2. Безопасность: Криптовалюты хранятся в цифровых кошельках, которые могут подвергаться хакерским атакам. Надежная защита активов требует использования безопасных методов хранения.</p>
+
+            <p>3. Регуляторные риски: Криптовалюты подвержены изменениям в законодательстве различных стран, что может повлиять на их статус и цену.</p>
+
+            <h3 style="text-align: center;">Ошибки, которые нужно избегать:</h1>
+
+            <p>1. Неосознанная торговля: Многие новички совершают сделки на основе эмоций, без должного анализа рынка. Это может привести к потере средств</p>
+
+            <p>2. Отсутствие диверсификации портфеля: Инвестирование только в одну криптовалюту может быть опасным. Диверсификация помогает снизить риски.</p>
+
+            <p>3. Игнорирование обучения: Понимание основ криптовалют и торговли поможет избежать многих ошибок. Обучение — ключевой фактор успеха.</p>
+
+            <p></p>
+
+            <p>Торговля криптовалютами предоставляет уникальные возможности для заработка, но также несет значительные риски. Понимание этих рисков и избегание распространенных ошибок поможет новичкам успешно войти в мир криптовалюты и достичь своих финансовых целей.</p>
+
+        </div>
+    </div>
+
+    <script src="scripts/jq.js"></script>
+    <script src="scripts/name.js"></script>
+</body>

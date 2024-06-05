@@ -1,0 +1,96 @@
+<head>
+    <title>Контакты</title>
+
+    <link rel="icon" type="image/png" href="images/logo.png">
+
+    <link rel="stylesheet" href="styles.css">
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <script type="module">
+        import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs'
+
+        const swiper = new Swiper('.swiper', {
+        loop: true,
+
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        });;
+    </script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+</head>
+
+<body>
+
+    <div id="loading-overlay" class="loading-overlay">
+        <div class="loading-spinner">
+          <div class="bounce1"></div>
+          <div class="bounce2"></div>
+          <div class="bounce3"></div>
+        </div>
+    </div>
+>
+    <div class="swiper">
+
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="image-container">
+                    <img src="images/slide1.jpg" alt="Your Photo">
+                    <div class="overlay"></div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="image-container">
+                    <img src="images/slide2.jpg" alt="Your Photo">
+                    <div class="overlay"></div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="image-container">
+                    <img src="images/slide3.jpg" alt="Your Photo">
+                    <div class="overlay"></div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="swiper-button-prev strelki"></div>
+        <div class="swiper-button-next strelki"></div>
+    </div>
+
+    <nav>
+        <a href="index.html" class="logo"><img src="images/logo.png" alt="Главная" width="50" height="50"></a>
+        <div class="menu">
+            <a href="index.html">Главная</a>
+            <a href="introduction.html">Введение</a>
+            <a href="arbitration.html">Арбитраж</a>
+            <a href="course.html">Курс</a>
+            <a href="contacts.html">Контакты</a>
+            <div id="account-menu-item"><a href="account.html" >Аккаунт</a></div>
+        </div>
+    </nav>
+
+    <div class ="container">
+        <div class="banner">
+            <img src="images/banner_author.gif" alt="Боковой баннер">
+        </div>
+
+        <div class="content">
+            <h1 style="text-align: center;">Контакты автора</h1>
+            
+            <p>ФИО: Пермяков Игорь Александрович</p>
+            <p>На написание сайта ушло ~ 3 недели</p>
+            <p>Почта: master.ru_2004@mail.ru</p>
+            <p>ТГ: <a href="https://t.me/PosMan0f">@PosMan0f</href></p>
+            <img src="images/author.jpg" style="width: 20vw;">
+
+        </div>
+    </div>
+
+    <script src="scripts/jq.js"></script>
+    <script src="scripts/name.js"></script>
+</body>

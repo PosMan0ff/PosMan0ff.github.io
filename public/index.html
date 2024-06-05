@@ -1,0 +1,118 @@
+<head>
+    <title>Crypto Hamster</title>
+
+    <link rel="icon" type="image/png" href="images/logo.png">
+
+    <link rel="stylesheet" href="styles.css">
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <script type="module">
+        import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs'
+
+        const swiper = new Swiper('.swiper', {
+        loop: true,
+
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        });;
+    </script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+</head>
+
+<body>
+
+    <div id="loading-overlay" class="loading-overlay">
+        <div class="loading-spinner">
+          <div class="bounce1"></div>
+          <div class="bounce2"></div>
+          <div class="bounce3"></div>
+        </div>
+    </div>
+>
+    <div class="swiper">
+
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="image-container">
+                    <img src="images/slide1.jpg" alt="Your Photo">
+                    <div class="overlay"></div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="image-container">
+                    <img src="images/slide2.jpg" alt="Your Photo">
+                    <div class="overlay"></div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="image-container">
+                    <img src="images/slide3.jpg" alt="Your Photo">
+                    <div class="overlay"></div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="swiper-button-prev strelki"></div>
+        <div class="swiper-button-next strelki"></div>
+    </div>
+
+    <nav>
+        <a href="index.html" class="logo"><img src="images/logo.png" alt="Главная" width="50" height="50"></a>
+        <div class="menu">
+            <a href="index.html">Главная</a>
+            <a href="introduction.html">Введение</a>
+            <a href="arbitration.html">Арбитраж</a>
+            <a href="course.html">Курс</a>
+            <a href="contacts.html">Контакты</a>
+            <div id="account-menu-item"><a href="account.html" >Аккаунт</a></div>
+        </div>
+    </nav>
+
+    <div class ="container">
+        <div class="banner">
+            <img src="images/banner_main.gif" alt="Боковой баннер">
+        </div>
+
+        <div class="content">
+            <h1 style="text-align: center;">Криптовалюта: Что это и как она работает</h1>
+            
+            <p>
+                В последние годы криптовалюта стала одной из самых обсуждаемых тем в финансовом мире. Но что же такое криптовалюта, и как она функционирует?
+            </p>
+
+            <p>
+                Криптовалюты представляют собой различные формы цифровых валют, каждая из которых работает на основе криптографии и технологии блокчейн. Блокчейн - это децентрализованная база данных, которая записывает все транзакции, происходящие в сети. Это означает, что информация о каждой транзакции сохраняется на множестве компьютеров (или узлов) по всей сети, что делает манипуляции данными или хакерские атаки гораздо более сложными.
+            </p>
+
+            <p>
+                Самая известная криптовалюта - биткоин, была создана в 2009 году и остается одной из самых популярных и широко используемых криптовалют в мире. Однако, существует множество других криптовалют, таких как Ethereum, Ripple, Litecoin, и многие другие, каждая со своими уникальными особенностями и применением.
+            </p>
+
+            <p>
+                Криптовалюты могут использоваться для различных целей, включая проведение онлайн-платежей, инвестирование, переводы средств через границы, а также для реализации "умных контрактов" - программ, которые автоматически выполняют условия сделок при определенных условиях.
+            </p>
+
+            <p>
+                Одним из ключевых преимуществ криптовалют является их децентрализованный характер. Это означает, что они не зависят от какого-либо центрального органа или правительства, что может сделать их более устойчивыми к политическим или экономическим нестабильностям.
+            </p>
+
+            <p>
+                Однако, криптовалюты также сталкиваются с некоторыми вызовами, такими как волатильность цен, недостаток регулирования и возможное использование для незаконных целей. Тем не менее, интерес к криптовалютам продолжает расти, и они становятся все более важным элементом современной финансовой системы.
+            </p>
+
+            <p>
+                Надеюсь, это предоставит вам более полное представление о криптовалютах. Если у вас есть еще какие-либо вопросы на эту тему или если вы хотите узнать что-то еще, пожалуйста, не стесняйтесь спрашивать!
+            </p>
+
+        </div>
+    </div>
+
+    <script src="scripts/jq.js"></script>
+    <script src="scripts/name.js"></script>
+</body>
